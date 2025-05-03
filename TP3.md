@@ -45,11 +45,12 @@ Representación GIC:
     GIC = <
     ΣT = {`<` , `>` , `+` , `-` , `.` , `,` , `[` , `]`}, 
     ΣN = {S, R, L}, 
-    S = , 
-    P
+    S = S, 
+    P = P
     >
 
 ```
+# Producciones:
 S -> RS | R | λ
 R -> < | > | + | - | . | , | L
 L -> [S]
