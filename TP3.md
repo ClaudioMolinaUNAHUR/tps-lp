@@ -9,7 +9,7 @@ Ejemplo:
 | -- | -- | -- | -- |
 | H | O | L | A |
 
-la forma en que va a acumular numeros es usando sumas un bucles para lograrlo, utilizando los movimientos para acumular y luego obtener un resultado, tal y como se hace en una Maquina de turing
+la forma en que va a acumular en celda es usando sumas, restas, o bucles de ambas para lograrlo, utilizando los movimientos para acumular y luego obtener un resultado, tal y como se hace en una Maquina de turing
 
 Su alfabeto consta solo de 9 simbolos
 
