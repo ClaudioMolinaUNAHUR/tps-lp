@@ -1,5 +1,5 @@
 # Brainfuck
-Es un lenguaje de programación esoterico, el cual puede resolver cualquier problema computacional ya que se lo considera Turing completo:
+Es un lenguaje de programación esoterico, el cual puede resolver cualquier problema computacional, ya que, se lo considera Turing completo:
 
 # Como programar en Brainfuck?
 brainfuck utiliza una cinta de salida con posiciones, donde en cada posición, se va a escribir un número entero. Este número al finalizar va a traducirce a su referido en ASCII
