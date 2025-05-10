@@ -14,4 +14,4 @@ https://docs.google.com/spreadsheets/d/19aTSzIjQNs6RBNJFz0bftTlqKr-uWbohbBZnxmP0
 # TP4
 ### Diagrama Sintáctico
 
-![alt text](image.png)
+![alt text](image-1.png)
