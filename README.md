@@ -15,3 +15,11 @@ https://docs.google.com/spreadsheets/d/19aTSzIjQNs6RBNJFz0bftTlqKr-uWbohbBZnxmP0
 ### Diagrama Sintáctico
 
 ![alt text](image-1.png)
+
+### Arbol Sintáctico
+
+palabra derivada 
+
+``,[-.[-]-,+] ``
+
+![alt text](image.png)
