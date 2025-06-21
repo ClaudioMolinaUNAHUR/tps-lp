@@ -11,7 +11,7 @@ https://docs.google.com/spreadsheets/d/19aTSzIjQNs6RBNJFz0bftTlqKr-uWbohbBZnxmP0
 Link al TP4 [Aquí](./resources/TP3.md)
 
 # TP4
-Link al TP4 [Aquí](./resources/TP4.md)
+Link al TP3 [Aquí](./resources/TP4.md)
 
 # TP5
 Link al TP5 [Aquí](./resources/TP5.md)
