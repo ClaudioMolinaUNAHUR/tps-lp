@@ -8,8 +8,7 @@ Link al Drive, con el Excel [Aquí](
 https://docs.google.com/spreadsheets/d/19aTSzIjQNs6RBNJFz0bftTlqKr-uWbohbBZnxmP0-r0/edit?gid=0#gid=0)
 
 # TP3
-Link to Archivo [Aquí](
-https://docs.google.com/spreadsheets/d/19aTSzIjQNs6RBNJFz0bftTlqKr-uWbohbBZnxmP0-r0/edit?gid=0#gid=0)
+Link al TP4 [Aquí](./resources/TP3.md)
 
 # TP4
 Link al TP4 [Aquí](./resources/TP4.md)
