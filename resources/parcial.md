@@ -171,7 +171,7 @@ console(result) # imprime por consola 15
 
 ## General
 
-| **Aspecto**                            | **Descripción**                                                            |
+|                           | **Descripción**                                                            |
 |----------------------------------------|----------------------------------------------------------------------------|
 | Paradigma                              | Imperativo, estructurado                                                   |
 | Tipos de datos                         | Primitivos: `str`, `number`, `boolean`                                     |
@@ -187,6 +187,8 @@ console(result) # imprime por consola 15
 | Casting                                | Implicito  ( siempre resuelve el tipo, no da errores )                     |
 
 ## Control de flujo
+|                           | **Descripción**                                                            |
+|----------------------------------------|----------------------------------------------------------------------------|
 | Secuencial                             | Sí ( se ejecuta en orden)                                                  |
 | Recursividad                           | Sí (permitida sintácticamente)                                             |
 | Pasaje de parámetros                   | Por valor                                                                  |
