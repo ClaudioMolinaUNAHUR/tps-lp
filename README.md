@@ -15,3 +15,7 @@ Link al TP4 [Aquí](./resources/TP4.md)
 
 # TP5
 Link al TP5 [Aquí](./resources/TP5.md)
+
+# Parcial
+Link al Parcial [Aquí](./resources/parcial.md)
+
