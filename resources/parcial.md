@@ -56,7 +56,7 @@ true | false
 # loop iterador
 
 los for son solo con numeros, tiene internamente el software una funcion range(<int>, <int>) que segun el numero que se ponga incrementa o decrementa un numero 0, 1 inc hasta 1, pero si es de 2, 0 dec hasta 0
-
+En caso de que range reciba 1 solo parametro, va de 0 a ese numero - 1
 ```
 loop (<identificador> in range(<int>, <int>)) {<content>}
 
@@ -127,6 +127,8 @@ range(<num>, <num>)
 
 Ejemplo:
 range(1, 2)
+
+range(3) # 0; 1; 2
 ```
 
 console: es una funcion que imprime en consola el contenido de los argumentos pasados que tienen return
@@ -203,39 +205,38 @@ console(result) # imprime por consola 15
 # BNF
 
 ```bnf
-<prog>::= #start <content> #end | #start #end
-<content_r>::= <w_return> | <console>  | <exp> | <assign> | <call_func> 
-<content>::= <wo_return> |  <loop> | <conditional> | <var> | <content_r>
+<prog>::= #start <content> #end
+<content>::= <function> |  <loop> | <conditional> | <var> | <assign> | <content_return> | λ
+<content_return>::= <function_return> | <console>  | <exp> | <call_func> 
 <console>::= console(<args>)
  
-<function>::= <w_return> | <wo_return>
-<w_return>::= func <id> (<param>) : <type> { <content> return <content_r> }
-<wo_return>::= func <id> (<param>) { <content> }
+<function>::= func <id> (<param>) { <content> }
+<function_return>::= func <id> (<param>) : <type> { <content> return <content_return> }
 
 <param>::= <type> <id>,  <param> | <var>, <param> | <type> <id> | <var>
 <var_param>::= <type> <id>: <primitive>
 
 <call_func>::= <id>(<args>) | <id>()
 
-<conditional>::= if ( <content_r> ) { <content_r> } | if ( <content_r> ) { <content_r> } else { <content_r> }
+<conditional>::= if ( <content_return> ) { <content> } | if ( <content_return> ) { <content> } else { <content> }
 
-<loop>::= loop ( <id> in <range>) { <content_r> }
+<loop>::= loop ( <id> in <range>) { <content> }
 <range>:: = range(<number>, <number>) | range(<number>)
 
 <exp>::= 
-    <primitive> <operator> <content_r> | 
-    <primitive> <operator> <content_r> <exp> | 
+    <primitive> <operator> <content_return> | 
+    <primitive> <operator> <content_return> <exp> | 
     <primitive> | 
-    <op_bool_un> <primitive> <operator> <content_r> | 
-    <op_bool_un> <primitive> <operator> <content_r> <exp> | 
+    <op_bool_un> <primitive> <operator> <content_return> | 
+    <op_bool_un> <primitive> <operator> <content_return> <exp> | 
     <op_bool_un> <primitive> | 
     <id><operator><primitive> | 
     <id><operator><primitive> <exp> | 
     <id>
 
-<var>::= <type> <id>: <content_r>
-<assign>::= <content_r>
-<args>::= <content_r>,<args> | <content_r>
+<var>::= <type> <id>: <content_return>
+<assign>::= <id>: <content_return>
+<args>::= <content_return>,<args> | <content_return>
 <id>::= <letter> <id> | <letter>
 
 <string>::= "<str_content>" | '<str_content>'
