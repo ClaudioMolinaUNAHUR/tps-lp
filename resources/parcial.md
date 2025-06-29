@@ -29,7 +29,7 @@ solo se pueden asignar en las variables aquellos expresiones que retornan alguno
   name: funcionSinReturn()
 ```
 
-# Operadores
+# Operadores:
 
 maneja operadores logicos, aritmeticos y de comparacion. Y ademas todos los tipos de datos manejan todos los operadores
 
@@ -44,7 +44,7 @@ Ejemplo:
 "abc" / true
 ```
 
-# expresiones
+# expresiones:
 Algunos ejemplos de expresiones:
 ```
 1
@@ -53,7 +53,7 @@ true & false
 true | false
 ```
 
-# loop iterador
+# loop iterador:
 
 los for son solo con numeros, tiene internamente el software una funcion range(`<int>`, `<int>`) que segun el numero que se ponga incrementa o decrementa un numero 0, 1 inc hasta 1, pero si es de 2, 0 dec hasta 0
 En caso de que range reciba 1 solo parametro, va de 0 a ese numero - 1
@@ -122,11 +122,12 @@ func funcionA (str name: "clau", boolean value): number {
 # funciones internas del lenguaje:
 
 range: es una funcion que solo es utilizable en los "loop"s
+tiene 1 o 2 parametros
 ```
 range(<num>, <num>)
 
 Ejemplo:
-range(1, 2)
+range(1, 2) # 1; 2
 
 range(3) # 0; 1; 2
 ```
@@ -148,6 +149,12 @@ El program se ejecuta entre estas palabras reservadas, y admite que el contenido
 
 ```
 #start
+#end
+```
+
+```
+#start
+false
 #end
 ```
 
@@ -207,7 +214,7 @@ console(result) # imprime por consola 15
 ```bnf
 <prog>::= #start <content> #end
 <content>::= <function> |  <loop> | <conditional> | <var> | <assign> | <content_return> | λ
-<content_return>::= <function_return> | <console>  | <exp> | <call_func> 
+<content_return>::= <function_return> | <console>  | <exp> | <call_func> | <primitive>
 <console>::= console(<args>)
  
 <function>::= func <id> (<param>) { <content> }
@@ -224,14 +231,14 @@ console(result) # imprime por consola 15
 <range>:: = range(<number>, <number>) | range(<number>)
 
 <exp>::= 
-    <primitive> <operator> <content_return> | 
-    <primitive> <operator> <content_return> <exp> | 
-    <primitive> | 
-    <op_bool_un> <primitive> <operator> <content_return> | 
-    <op_bool_un> <primitive> <operator> <content_return> <exp> | 
-    <op_bool_un> <primitive> | 
-    <id><operator><primitive> | 
-    <id><operator><primitive> <exp> | 
+    <content_return> <operator> <content_return> | 
+    <content_return> <operator> <content_return> <exp> | 
+    <content_return> | 
+    <op_bool_un> <content_return> <operator> <content_return> | 
+    <op_bool_un> <content_return> <operator> <content_return> <exp> | 
+    <op_bool_un> <content_return> | 
+    <id><operator><content_return> | 
+    <id><operator><content_return> <exp> | 
     <id>
 
 <var>::= <type> <id>: <content_return>
