@@ -55,7 +55,7 @@ true | false
 
 # loop iterador
 
-los for son solo con numeros, tiene internamente el software una funcion range(<int>, <int>) que segun el numero que se ponga incrementa o decrementa un numero 0, 1 inc hasta 1, pero si es de 2, 0 dec hasta 0
+los for son solo con numeros, tiene internamente el software una funcion range(`<int>`, `<int>`) que segun el numero que se ponga incrementa o decrementa un numero 0, 1 inc hasta 1, pero si es de 2, 0 dec hasta 0
 En caso de que range reciba 1 solo parametro, va de 0 a ese numero - 1
 ```
 loop (<identificador> in range(<int>, <int>)) {<content>}
