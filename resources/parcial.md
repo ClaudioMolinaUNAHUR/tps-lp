@@ -219,9 +219,7 @@ console(result) # imprime por consola 15
  
 <function>::= func <id> (<param>) { <content> }
 <function_return>::= func <id> (<param>) : <type> { <content> return <content_return> }
-
 <param>::= <type> <id>,  <param> | <var>, <param> | <type> <id> | <var>
-<var_param>::= <type> <id>: <primitive>
 
 <call_func>::= <id>(<args>) | <id>()
 
