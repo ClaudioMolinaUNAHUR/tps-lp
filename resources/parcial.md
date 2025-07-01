@@ -223,7 +223,7 @@ console(result) # imprime por consola 15
 
 <call_func>::= <id>(<args>) | <id>()
 
-<conditional>::= if ( <content_return> ) { <content> } | if ( <content_return> ) { <content> } else { <content> }
+<conditional>::= if ( <content_return> ) { <content> } | if ( <content_return> ) { <content> } else { <content> } | if ( <content_return> ) { <content> } else <conditional>
 
 <loop>::= loop ( <id> in <range>) { <content> }
 <range>:: = range(<number>, <number>) | range(<number>)
