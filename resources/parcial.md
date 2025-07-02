@@ -214,7 +214,7 @@ console(result) # imprime por consola 15
 ```bnf
 <prog>::= #start <content> #end
 <content>::= <function> |  <loop> | <conditional> | <var> | <assign> | <content_return> | λ
-<content_return>::= <function_return> | <console>  | <exp> | <call_func> | <primitive>
+<content_return>::= <function_return> | <console>  | <exp> | <call_func> | <primitive> | <id>
 <console>::= console(<args>)
  
 <function>::= func <id> (<param>) { <content> }
@@ -230,14 +230,11 @@ console(result) # imprime por consola 15
 
 <exp>::= 
     <content_return> <operator> <content_return> | 
-    <content_return> <operator> <content_return> <exp> | 
+    <content_return> <operator> <exp> | 
     <content_return> | 
     <op_bool_un> <content_return> <operator> <content_return> | 
-    <op_bool_un> <content_return> <operator> <content_return> <exp> | 
-    <op_bool_un> <content_return> | 
-    <id><operator><content_return> | 
-    <id><operator><content_return> <exp> | 
-    <id>
+    <op_bool_un> <content_return> <operator> <exp> | 
+    <op_bool_un> <content_return>
 
 <var>::= <type> <id>: <content_return>
 <assign>::= <id>: <content_return>
