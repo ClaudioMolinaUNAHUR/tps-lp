@@ -249,11 +249,11 @@ console(result) # imprime por consola 15
 <id>::= <letter> <id> | <letter>
 
 <string>::= "<str_content>" | '<str_content>'
-<str_content>::= <letter> <str_content> | <str_content>
+<str_content>::= <letter> <str_content> | <letter>
 
 <primitive> ::= <number> | <boolean> | <string>
 <operator> ::= <op_arit> | <op_bool_bin> | <op_comp>
-<number> ::= <int> <number> | <number>
+<number> ::= <int> <number> | <int>
 <type> ::= str | number | boolean
 <op_arit> ::= + | - | * | / | %
 <op_bool_bin>::= & | `|`
