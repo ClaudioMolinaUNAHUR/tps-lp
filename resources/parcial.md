@@ -253,7 +253,8 @@ console(result) # imprime por consola 15
 
 <primitive> ::= <number> | <boolean> | <string>
 <operator> ::= <op_arit> | <op_bool_bin> | <op_comp>
-<number> ::= <int> <number> | <int>
+<number> ::= <number_content> | +<number_content> | -<number_content>
+<number_content> ::= <int> <number_content> | <int>
 <type> ::= str | number | boolean
 <op_arit> ::= + | - | * | / | %
 <op_bool_bin>::= & | `|`
