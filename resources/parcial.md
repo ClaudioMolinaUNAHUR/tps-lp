@@ -100,7 +100,7 @@ func <identificador> (<tipo> param1: <str | num | bool>, ...,<tipo> paramN) {
 
 Ejemplo:
 func funcionA (str name: "clau", boolean value) {
-  console("Nombre: ", name, "de valor:", value)
+  console("Nombre ", name, "de valor", value)
 }
 ```
 
@@ -137,7 +137,7 @@ console: es una funcion que imprime en consola el contenido de los argumentos pa
 console(<args>)
 
 Ejemplo:
-console("Nombre: ", name, "de valor:", value)
+console("Nombre ", name, "de valor", value)
 ```
 # Iniciar programa:
 El program se ejecuta entre estas palabras reservadas, y admite que el contenido sea vacio
@@ -187,7 +187,7 @@ console(result) # imprime por consola 15
 | Dominio                                | Especifico                                                                 |
 | Tipado                                 | Estático, fuerte                                                           |
 | Tipo de Traductor                      | Compilado                                                                  |
-| Generación                             | 3 incluye los lenguajes de alto nivel                                      |
+| Generación                             | 3 lenguaje de alto nivel                                      |
 | Interactividad                         | No orientado a eventos                                                     |
 | Realización visual                     | Textual                                                                    |
 | Prediccion del siguiente estado        | Determinista                                                               |
@@ -261,6 +261,6 @@ console(result) # imprime por consola 15
 <op_bool_un>::= !
 <op_comp>::= < | > | <= | >= | == | !=
 <boolean>::= true | false
-<letter>::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z
+<letter>::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z | ` ` 
 <int>::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 ```
