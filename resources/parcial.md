@@ -219,7 +219,8 @@ console(result) # imprime por consola 15
 
 ```bnf
 <prog>::= #start <content> #end
-<content>::= <function> |  <loop> | <conditional> | <var> | <assign> | <content_return> | λ
+<content>::= <content_no_return> | <content_return> | <content_no_return> <content> | <content_return> <content> | λ
+<content_no_return>::= <function> |  <loop> | <conditional> | <var> | <assign>
 <content_return>::= <function_return> | <console>  | <exp> | <call_func> | <primitive> | <id>
 <console>::= console(<args>)
  
