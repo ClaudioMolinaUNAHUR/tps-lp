@@ -184,7 +184,13 @@ console(result) # imprime por consola 15
 |----------------------------------------|----------------------------------------------------------------------------|
 | Paradigma                              | Imperativo, estructurado                                                   |
 | Tipos de datos                         | Primitivos: `str`, `number`, `boolean`                                     |
+| Dominio                                | Especifico                                                                 |
 | Tipado                                 | Estático, fuerte                                                           |
+| Tipo de Traductor                      | Compilado                                                                  |
+| Generación                             | 3 incluye los lenguajes de alto nivel                                      |
+| Interactividad                         | No orientado a eventos                                                     |
+| Realización visual                     | Textual                                                                    |
+| Prediccion del siguiente estado        | Determinista                                                               |
 | Inferencia de tipos                    | No     (siempre se debe especificar)                                       |
 | Nivel de abstracción                   | Medio    (es estructurado, pero no maneja coleccion ni objetos)            |
 | Independencia de la máquina            | Sí    (se ejecuta en cualquier sistema)                                    |
